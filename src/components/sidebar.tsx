@@ -60,7 +60,7 @@ export default function Sidebar({
 
 						<a
 							className='flex items-center  font-medium text-gray-500 hover:text-blue-600  dark:text-gray-400 dark:hover:text-blue-500'
-							href='https://github.com/opensource-force'
+							href='https://github.com/open-source-force'
 						>
 							<svg
 								className='flex-shrink-0 size-4'

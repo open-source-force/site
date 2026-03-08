@@ -1,12 +1,12 @@
 services:
   next-app:
     container_name: osf-site-prod-next-app
-    image: ghcr.io/opensource-force/osf-site:latest
+    image: ghcr.io/open-source-force/osf-site:latest
     restart: always
     ports:
       - 9090:3000
     labels:
-      - "com.centurylinklabs.watchtower.enable=true"
+      - 'com.centurylinklabs.watchtower.enable=true'
   watchtower:
     container_name: watchtower
     image: containrrr/watchtower
@@ -15,5 +15,5 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - WATCHTOWER_INTERVAL=21600 # Check every 6 hours (in seconds)
-      - WATCHTOWER_CLEANUP=true   # Remove old images to save disk space
+      - WATCHTOWER_CLEANUP=true # Remove old images to save disk space
       - WATCHTOWER_LABEL_ENABLE=true # Only watch containers with the watchtower label

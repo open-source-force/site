@@ -4,7 +4,7 @@ export const Projects: ProjectData[] = [
 		descriptionShort: 'A minimal IRC server written in Nim',
 		descriptionLong: 'A project that deserves a better description.',
 		langs: ['Nim'],
-		repo: 'https://github.com/opensource-force/osf-IRCd',
+		repo: 'https://github.com/open-source-force/osf-IRCd',
 		wantContributors: true
 	},
 	{
