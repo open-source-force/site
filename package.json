@@ -17,7 +17,7 @@
 		"react-dom": "^19.2.8"
 	},
 	"devDependencies": {
-		"@types/node": "^22.19.1",
+		"@types/node": "^26.2.0",
 		"@types/react": "^18.3.27",
 		"@types/react-dom": "^19.2.4",
 		"autoprefixer": "^10.5.4",
