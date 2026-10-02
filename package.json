@@ -22,7 +22,7 @@
 		"@types/react-dom": "^19.2.4",
 		"autoprefixer": "^10.5.4",
 		"eslint-config-next": "^16.3.6",
-		"npm-check-updates": "^23.0.2",
+		"npm-check-updates": "^23.1.0",
 		"postcss": "^8.5.6",
 		"tailwindcss": "^4.3.3",
 		"typescript": "^7.0.2"
