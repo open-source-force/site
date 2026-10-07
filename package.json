@@ -21,7 +21,7 @@
 		"@types/react": "^19.3.0",
 		"@types/react-dom": "^19.3.0",
 		"autoprefixer": "^10.6.1",
-		"eslint-config-next": "^16.3.6",
+		"eslint-config-next": "^16.3.8",
 		"npm-check-updates": "^23.1.0",
 		"postcss": "^8.5.28",
 		"tailwindcss": "^4.3.3",
