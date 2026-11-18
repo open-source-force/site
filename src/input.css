@@ -1,0 +1,66 @@
+/* Tailwind input. Built to /styles.css by the Tailwind CLI (see README). */
+@import 'tailwindcss' source('.');
+
+@theme {
+	--animate-slideInFromRight: slideInFromRight ease-out 0.3s;
+	--animate-opacityDelay: opacityDelay 0.3s;
+
+	@keyframes slideInFromRight {
+		0% {
+			transform: translateX(100%);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+	@keyframes opacityDelay {
+		0% {
+			opacity: 0;
+		}
+		66% {
+			opacity: 0.05;
+		}
+		100% {
+			opacity: 0.1;
+		}
+	}
+}
+
+@layer base {
+	/* Keep Tailwind v3 defaults the layout was designed against. */
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
+	button:not(:disabled),
+	[role='button']:not(:disabled) {
+		cursor: pointer;
+	}
+
+	:root {
+		--foreground-rgb: 0, 0, 0;
+		--background-start-rgb: 214, 219, 220;
+		--background-end-rgb: 255, 255, 255;
+	}
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--foreground-rgb: 255, 255, 255;
+			--background-start-rgb: 0, 0, 0;
+			--background-end-rgb: 0, 0, 0;
+		}
+	}
+	body {
+		color: rgb(var(--foreground-rgb));
+		background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+			rgb(var(--background-start-rgb));
+	}
+}
+
+.flex-content-center {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
